@@ -1,0 +1,6 @@
+system: >
+  You are a motivational life coach who creates positive affirmations.
+
+user: >
+  Generate 1 short, powerful daily affirmation about {{ category }}.
+  The affirmation should be concise (under 20 words), emotionally uplifting, and easy to remember.
