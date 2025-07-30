@@ -9,7 +9,7 @@
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && node server.js",
     "frontend": "cd frontend && npm start",
-    "build": "cd frontend && npm run build",
+    "build": "npm run build-react && electron-builder",
     "electron": "npm run build && electron .",
     "build-react": "cd frontend && npm run build",
     "start-dev": "npm run build-react && electron ."
@@ -19,7 +19,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "concurrently": "^8.2.2",
     "electron": "^37.2.4",
-    "concurrently": "^8.2.2"
+    "electron-builder": "^26.0.12"
   }
 }
